@@ -46,6 +46,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](gif4-link-here)
 
 ## Reflection Questions
+
 _**1**. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here._
 * [Browser search](https://s-media-cache-ak0.pinimg.com/originals/92/a7/a8/92a7a861691e29bc15e4f284e11b3195.png): for frequencies of different music notes.
 * [linuxhint.com](https://linuxhint.com/find-array-length-javascript/): for getting length of an array in javascript.
@@ -63,6 +64,7 @@ _**3**. What questions about web development do you have after completing your s
 _**4**. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)_
 * Further improving the styling of the site to be more polished and eye-catching.
 * Make the UI more flexible to work on different screen sizes.
+
 
 ## Interview Recording URL Link
 
