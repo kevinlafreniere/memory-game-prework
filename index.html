@@ -13,20 +13,89 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body class="content">
     <!-- this is the start of content -->
-    <h1>Light and Sound Memory Game</h1>
+    <div class="header">
+      <h1>Light and Sound Memory Game</h1>
+      <p>Welcome to the game! Repeat back the pattern by pressing buttons.</p>
+    </div>
 
-    <p>Welcome to the game! Repeat back the pattern by pressing buttons.</p>
+    <br>
+    <table border="1">
+    <thead>
+        <tr>
+            <th colspan="2">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+               <label for="buttonCt">How many buttons?</label>
+            </td>
+            <td>
+              <select id="buttonCt" onchange="changeButtonCt()">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+          <td><label for="mistakeCt">How many mistakes allowed?</label></td>
+          <td>
+            <select id="mistakeCt">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="patternLen">Maximum pattern length?</label></td>
+          <td>
+            <select id="patternLen">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7" selected>7</option>
+              <option value="8">8</option>
+            </select>
+          </td>
+        </tr>
+    </tbody>
+</table>
+    
+    <br>
+    
 
+    
     <button id="startBtn" onclick="startGame()">Start</button>
     <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
 
-    <div id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+    <hr>
+    <div> Mistakes: <span id="mistakes">0</span> <span id="timer">Time remaining:</span></div>
+    <br>
+    <div id="gameButtonArea" style="text-align:center">
+      <audio id="audio1" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/A.mp3?v=1648290847205"></audio>
+      <button id="button1" onclick="guess(1)" onmousedown="playAudio(1)" onmouseup="stopTone(1)" draggable="true" ondragleave="stopTone(1)" ondragenter="startTone(1)"><img id="img1" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/A.png?v=1648241505060" width="100" height="100" class="hidden"></button>
+      
+      <audio id="audio2" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/B.mp3?v=1648290847230"></audio>
+      <button id="button2" onclick="guess(2)" onmousedown="playAudio(2)" onmouseup="stopTone(2)" draggable="true" ondragend="stopTone(2)"><img id="img2" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/B.png?v=1648241094261" width="100" height="100" class="hidden"></button>
+      
+      <audio id="audio3" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/C.mp3?v=1648290847250"></audio>
+      <button id="button3" onclick="guess(3)" onmousedown="playAudio(3)" onmouseup="stopTone(3)" draggable="true" ondragend="stopTone(3)"><img id="img3" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/C.png?v=1648241420438" width="100" height="100" class="hidden"></button>
+      
+      <audio id="audio4" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/D.mp3?v=1648290847416"></audio>
+      <button id="button4" onclick="guess(4)" onmousedown="playAudio(4)" onmouseup="stopTone(4)" draggable="true" ondragend="stopTone(4)"><img id="img4" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/D.png?v=1648241317165" width="100" height="100" class="hidden"></button>
+      
+      <audio id="audio5" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/E.mp3?v=1648290847325"></audio>
+      <button id="button5" onclick="guess(5)" onmousedown="playAudio(5)" onmouseup="stopTone(5)" draggable="true" ondragend="stopTone(5)" class="hidden"><img id="img5" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/E.png?v=1648241635033" width="100" height="100" class="hidden"></button>
+      
+      <audio id="audio6" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/F.mp3?v=1648290847358"></audio>
+      <button id="button6" onclick="guess(6)" onmousedown="playAudio(6)" onmouseup="stopTone(6)" draggable="true" ondragend="stopTone(6)" class="hidden"><img id="img6" src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/F.png?v=1648241728452" width="100" height="100" class="hidden"></button>
     </div>
   </body>
 </html>
