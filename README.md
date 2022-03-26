@@ -6,7 +6,7 @@ Submitted by: **Kevin Lafreniere**
 
 Time spent: **#** hours spent in total
 
-Link to project: [GitHub Project](https://github.com/kevinlafreniere/memory-game-prework)
+Link to project: [Glitch Code](https://glitch.com/edit/#!/memory-game-site-internship)
 
 ## Required Functionality
 
@@ -62,7 +62,7 @@ _**3**. What questions about web development do you have after completing your s
 
 _**4**. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)_
 * Further improving the styling of the site to be more polished and eye-catching.
-
+* Make the UI more flexible to work on different screen sizes.
 
 ## Interview Recording URL Link
 
