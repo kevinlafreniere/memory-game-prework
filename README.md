@@ -61,6 +61,7 @@ _**1.** **If you used any outside resources to help complete your submission (we
 * [javatpoint.com](https://www.javatpoint.com/javascript-setinterval-method): used to understand `setInterval()` and `setTimeout()`.
 * [tutorialspoint.com](https://www.tutorialspoint.com/javascript-cleartimeout-and-clearinterval-method): used to learn about `clearInterval()` and `clearTimeout()`.
 * [stackoverflow.com](https://stackoverflow.com/questions/13002935/html5-audio-start-over): question about replaying audio clips using JavaScript
+* [github.com](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet): Readme markdown cheatsheet
 
 _**2.** **What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)**_
 * I struggled with creating the guess function. 
