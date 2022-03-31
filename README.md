@@ -1,12 +1,12 @@
 # Pre-work - *Memory Game*
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
+**Memory Game** is a Light & Sound Memory game made to apply for CodePath's SITE Program. 
 
 Submitted by: **Kevin Lafreniere**
 
 Time spent: **~9** hours spent in total
 
-Link to project: [GitHub Project](https://github.com/kevinlafreniere/memory-game-prework)
+Link to project: [Glitch Code](https://glitch.com/edit/#!/memory-game-site-internship) / [Live Site](https://memory-game-site-internship.glitch.me)
 
 ## Required Functionality
 
@@ -38,16 +38,18 @@ The following **additional** features are implemented:
 - [x] Amount of buttons will appear and disappear to match the selected option.
 
 ## Video Walkthrough (GIF/YouTube)
-* [**YOUTUBE VIDEO:**](https://www.youtube.com/watch?v=54FcTzmOt5Y) Multiple demos **with audio**
+* ### [**YOUTUBE VIDEO:**](https://www.youtube.com/watch?v=54FcTzmOt5Y) Multiple demos **with audio** (best quality)
   * Playback speed increase, randomized patterns, and sound changes demoed.
 
 * Demo of button images and winning game
-<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoWin.gif" width="200" />
+<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoWin.gif" width="500" />
+
 * Demo of extra buttons and losing game with multiple mistakes
   * implementation of settings to change certain game values
-<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoMistake.gif" width="200" />
+<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoMistake.gif" width="500" />
+
 * Demo of loss by running out of time
-<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoTime.gif" width="200" />
+<img src="https://cdn.glitch.global/05a6ac53-1254-4063-912c-ce4a0d5a5dd1/DemoTime.gif" width="500" />
 
 ## Reflection Questions
 _**1.** **If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**_
